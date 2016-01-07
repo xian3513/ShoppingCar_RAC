@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366B30146C0E7F83E05C4BD3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195700E9909A622E8CF6E28D /* libPods.a */; };
 		90CC10611C3E5B0700DA051B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10601C3E5B0700DA051B /* main.m */; };
 		90CC10641C3E5B0700DA051B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10631C3E5B0700DA051B /* AppDelegate.m */; };
 		90CC10671C3E5B0700DA051B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10661C3E5B0700DA051B /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		90CC106F1C3E5B0700DA051B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CC106D1C3E5B0700DA051B /* LaunchScreen.storyboard */; };
 		90CC107A1C3E5B0700DA051B /* ShopingCar_RACTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10791C3E5B0700DA051B /* ShopingCar_RACTests.m */; };
 		90CC10851C3E5B0700DA051B /* ShopingCar_RACUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10841C3E5B0700DA051B /* ShopingCar_RACUITests.m */; };
+		90CC10941C3E625900DA051B /* ShoppingCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC10931C3E625900DA051B /* ShoppingCarCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195700E9909A622E8CF6E28D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		259213188BC64914EB5F59AC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		90CC105C1C3E5B0700DA051B /* ShopingCar_RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopingCar_RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CC10601C3E5B0700DA051B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90CC10621C3E5B0700DA051B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		90CC10801C3E5B0700DA051B /* ShopingCar_RACUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopingCar_RACUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CC10841C3E5B0700DA051B /* ShopingCar_RACUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopingCar_RACUITests.m; sourceTree = "<group>"; };
 		90CC10861C3E5B0700DA051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90CC10921C3E625900DA051B /* ShoppingCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCarCell.h; sourceTree = "<group>"; };
+		90CC10931C3E625900DA051B /* ShoppingCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCarCell.m; sourceTree = "<group>"; };
+		91E185B515AB38839C287F7E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366B30146C0E7F83E05C4BD3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02F3ED0DB5B7968020F62638 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91E185B515AB38839C287F7E /* Pods.debug.xcconfig */,
+				259213188BC64914EB5F59AC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3346251D7CEF61E445354F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				195700E9909A622E8CF6E28D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90CC10531C3E5B0700DA051B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				90CC10781C3E5B0700DA051B /* ShopingCar_RACTests */,
 				90CC10831C3E5B0700DA051B /* ShopingCar_RACUITests */,
 				90CC105D1C3E5B0700DA051B /* Products */,
+				02F3ED0DB5B7968020F62638 /* Pods */,
+				3346251D7CEF61E445354F14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +137,8 @@
 				90CC106D1C3E5B0700DA051B /* LaunchScreen.storyboard */,
 				90CC10701C3E5B0700DA051B /* Info.plist */,
 				90CC105F1C3E5B0700DA051B /* Supporting Files */,
+				90CC10921C3E625900DA051B /* ShoppingCarCell.h */,
+				90CC10931C3E625900DA051B /* ShoppingCarCell.m */,
 			);
 			path = ShopingCar_RAC;
 			sourceTree = "<group>";
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CC10891C3E5B0700DA051B /* Build configuration list for PBXNativeTarget "ShopingCar_RAC" */;
 			buildPhases = (
+				766D183A30940508116D46AC /* Check Pods Manifest.lock */,
 				90CC10581C3E5B0700DA051B /* Sources */,
 				90CC10591C3E5B0700DA051B /* Frameworks */,
 				90CC105A1C3E5B0700DA051B /* Resources */,
+				CE9E14478AF0319BF342E0AF /* Embed Pods Frameworks */,
+				FEC19134923E02B74543CBBB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +297,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		766D183A30940508116D46AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9E14478AF0319BF342E0AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC19134923E02B74543CBBB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90CC10581C3E5B0700DA051B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +352,7 @@
 			files = (
 				90CC10671C3E5B0700DA051B /* ViewController.m in Sources */,
 				90CC10641C3E5B0700DA051B /* AppDelegate.m in Sources */,
+				90CC10941C3E625900DA051B /* ShoppingCarCell.m in Sources */,
 				90CC10611C3E5B0700DA051B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +492,7 @@
 		};
 		90CC108A1C3E5B0700DA051B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E185B515AB38839C287F7E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopingCar_RAC/Info.plist;
@@ -422,6 +504,7 @@
 		};
 		90CC108B1C3E5B0700DA051B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259213188BC64914EB5F59AC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShopingCar_RAC/Info.plist;
@@ -498,6 +581,7 @@
 				90CC108B1C3E5B0700DA051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90CC108C1C3E5B0700DA051B /* Build configuration list for PBXNativeTarget "ShopingCar_RACTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +590,7 @@
 				90CC108E1C3E5B0700DA051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90CC108F1C3E5B0700DA051B /* Build configuration list for PBXNativeTarget "ShopingCar_RACUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +599,7 @@
 				90CC10911C3E5B0700DA051B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

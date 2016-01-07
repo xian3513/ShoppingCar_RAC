@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ShoppingCarCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *subButton;
+@property (weak, nonatomic) IBOutlet UITextField *numTextField;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UIImageView *contentImgView;
 
 @end
